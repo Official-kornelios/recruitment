@@ -1,0 +1,25 @@
+.main-nav{
+    width: 100vw;
+    background: #ffffff;
+}
+
+.navbar-brand{
+    margin-left: 7%;
+}
+
+.navbar-nav{
+    margin-right: 7%;
+}
+
+.nav-button-toggle{
+    margin-right: 7%;
+}
+
+.nav-menu-collapse{
+    margin-left: 7%;
+}
+
+.navbar-nav .dropdown-nav-item .dropdown-item > li > a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}

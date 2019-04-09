@@ -1,0 +1,351 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* The hero image */
+.hero {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img_1.jpg');
+
+  /* Set a specific height */
+  height: 75vh;
+  width: 100vw;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-inner {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+.hero h4{
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.hero h5{
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.opportunities-teaser{
+  background-color: #efefef;
+  left: 0;
+  padding: 40px 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.teaser{
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  padding: 2em 0;
+  font-size: 1em;
+  vertical-align: top;
+}
+
+.teaser .opportunities{
+  background:#efefef;
+  width: 100vw;
+  float: none;
+  margin: 0 auto 6px auto;
+}
+
+.opportunities-header-tag{
+  color: #857363;
+  font-size: 1.7em;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.teaser .opportunities-btn-group{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+}
+
+.teaser .opportunities .opportunities-btn-1,
+.teaser .opportunities .opportunities-btn-2 {
+  border-radius: 0px;
+  margin: 0 .5em .5em .5em;
+  flex-grow: 1;
+}
+
+.opportunities-btn-1{
+  width: 300px;
+  background: #000000;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.opportunities-btn-1:hover{
+  background: #666666;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.container{
+  margin: 0;
+  width: auto;
+  position: relative;
+}
+
+.container .container_col{
+  margin: 0 auto;
+  position: relative;
+}
+.linkedin-component .linkedin{
+  margin: 0;
+}
+
+.linkedin-container .background-black{
+  background-color: #000000;
+}
+
+.background-hero-variant{
+  padding: 0;
+  margin: 0;
+}
+
+.background .background-hero-variant .background-black {
+  margin: 0;
+}
+
+.linkedin-container .background{
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -15px;
+}
+
+.background-content{
+  height: 100%;
+}
+
+.linkedin-teaser{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  font-size: 1em;
+  vertical-align: top;
+}
+
+.linkedin-teaser-hero{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.linkedin-teaser-hero img{
+  margin-top:60px;
+}
+
+.linkedin-container .text-title-linkedin{
+  padding: 30px 20px 10px;
+}
+
+.text-title-linkedin{
+  padding: 30px 0;
+}
+
+.text{
+  line-height: normal;
+  line-height: initial;
+  font-size: 1em;
+}
+
+.linkedin-teaser-hero .teaser__title{
+  margin: auto;
+  padding-bottom: 20px;
+  font-weight: 100;
+}
+
+.linkedin .container .linkedin-btn-1{
+  border-radius: 0;
+  margin: 0 .5em .5em .5em;
+  flex-grow: 1;
+  width: 300px;
+  background: #666;
+  color: #ffffff;
+  border-color: transparent;
+  margin-bottom: 60px;
+}
+
+.linkedin .container .linkedin-btn-1:hover,
+.linkedin .container .linkedin-btn-1:active{
+  background: #efefef;
+  color: #000000;
+  border-color: transparent;
+  border: none;
+}
+
+.col-md-6 p{
+  line-height: 1.25em;
+  margin: 0 0 15px 0;
+}
+
+.leftside, .rightside{
+  height: 50vh;
+  width: 100%;
+}
+
+
+@media screen and (min-width:768px){
+  .leftside, .rightside{
+    height: 60vh;
+  }
+
+  .article-title {
+    line-height: 1;
+  }
+
+  .rightside{
+    padding: 5em;
+    background: #ffffff;
+  }
+}
+
+@media screen and (min-width:640px){
+  h2 {
+    font-size: 2.406rem;
+  }
+
+  .rightside p{
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width:767px){
+  .rightside{
+    background: #ffffff;
+    padding: 2.5em;
+  }
+
+  .row .col-md-6 .opportunities-btn-1 {
+    border-radius: 0px;
+    margin: 0;
+    flex-grow: 1;
+  }
+}
+
+
+.leftside{
+  background-image: url('/img_3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.article-title{
+  font-size: 2.25rem;
+  font-weight: 100;
+  color: #857363;
+}
+
+.rightside p{
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.row .col-md-6 .opportunities-btn-1 {
+  border-radius: 0px;
+  margin: 15px 0px 15px 0px;
+  flex-grow: 1;
+}
+
+.leftside-2, .rightside-2{
+  height: 50vh;
+  width: 100%;
+}
+
+@media screen and (min-width:768px){
+  .rightside-2, .leftside-2{
+    height: 60vh;
+  }
+
+  .article-title {
+    line-height: 1;
+  }
+
+  .leftside-2{
+    padding: 5em;
+    background: #efefef;
+  }
+}
+
+@media screen and (min-width:640px){
+  h2 {
+    font-size: 2.406rem;
+  }
+
+  .leftside-2 p{
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width:767px){
+  .leftside-2{
+    background: #efefef;
+    padding: 2.5em;
+  }
+}
+
+.rightside-2{
+  background-image: url('/img_8.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.leftside-2 p{
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
